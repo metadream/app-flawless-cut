@@ -7,7 +7,7 @@
  * --------------------------------------------------------
  */
 
-window.addEventListener('DOMContentLoaded', () => {
+globalThis.addEventListener('DOMContentLoaded', () => {
 
   // Create elements for alert
   const message = $('<div class="message"><div></div></div>')
@@ -67,10 +67,10 @@ Object.assign(window, {
     const index = queryString.indexOf('?')
     queryString = index > -1 ? queryString.substring(index+1) : queryString
 
-    let result = {}
+    const result = {}
     const params = queryString.split('&')
     params.forEach(param => {
-      let item = param.split('=')
+      const item = param.split('=')
       result[item[0]] = decodeURI(item[1])
     })
     return result
@@ -121,7 +121,7 @@ Object.assign(Element.prototype, {
 
 Object.assign(Date.prototype, {
   format() {
-    let month = String(this.getMonth() + 1).padStart(2, 0),
+    const month = String(this.getMonth() + 1).padStart(2, 0),
       days = String(this.getDate()).padStart(2, 0),
       hours = String(this.getHours()).padStart(2, 0),
       mins = String(this.getMinutes()).padStart(2, 0),

@@ -1,12 +1,14 @@
 const { execFile } = require('child_process')
 const stringToStream = require('string-to-stream')
 const path = require('path')
-const ffmpeg = path.join(__dirname, 'bin/ffmpeg')
-const mediainfo = path.join(__dirname, 'bin/mediainfo')
+
+const postfix = process.platform == 'win32' ? '.exe' : '';
+const ffmpeg = path.join(__dirname, 'bin/ffmpeg' + postfix)
+const mediainfo = path.join(__dirname, 'bin/mediainfo' + postfix)
 
 function ffmpegCommand(args, options) {
   loading(true)
-  const process = execFile(ffmpeg, args, options, (error, stdout, stderr) => {
+  const process = execFile(ffmpeg, args, options, (error, _stdout, stderr) => {
     if (stderr instanceof Buffer) return
 
     loading(false)
@@ -138,7 +140,7 @@ module.exports = {
 
   getAudioDevice() {
     return new Promise(resolve => {
-      execFile(ffmpeg, ['-list_devices', 'true', '-f', 'dshow', '-i', 'dummy'], (error, stdout, stderr) => {
+      execFile(ffmpeg, ['-list_devices', 'true', '-f', 'dshow', '-i', 'dummy'], (_error, _stdout, stderr) => {
         const lines = stderr.split('\n')
         lines.some((line, i) => {
           let match = /^\[dshow.+\] DirectShow audio devices$/.exec(line.trim())

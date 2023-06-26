@@ -26,7 +26,7 @@ const recorder = new Recorder()
  * Open file events
  * ----------------------------------------------------- */
 
-openFileBtn.ondragover = function(e) {
+openFileBtn.ondragover = function() {
   return false
 }
 
@@ -42,7 +42,7 @@ openFileBtn.ondragleave = function(e) {
 
 openFileBtn.ondrop = function(e) {
   e.preventDefault()
-  let path = e.dataTransfer.files[0].path
+  const path = e.dataTransfer.files[0].path
   if (path) video.setSource(path)
 }
 
@@ -86,7 +86,7 @@ cutBtn.onclick = function() {
 }
 
 helpBtn.onclick = function() {
-  electron.shell.openExternal('https://github.com/metadream/apps-for-desktop')
+  electron.shell.openExternal('https://github.com/metadream/app-flick-cut')
 }
 
 /* --------------------------------------------------------

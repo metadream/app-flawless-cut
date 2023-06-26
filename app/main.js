@@ -61,7 +61,7 @@ const gotTheLock = app.requestSingleInstanceLock()
 if (!gotTheLock) { app.quit() } else {
 
   // Someone tried to run a second instance, we should focus our window.
-  app.on('second-instance', (event, commandLine, workingDirectory) => {
+  app.on('second-instance', (_event, _commandLine, _workingDirectory) => {
     if (mainWindow) {
       if (mainWindow.isMinimized()) mainWindow.restore()
       mainWindow.focus()

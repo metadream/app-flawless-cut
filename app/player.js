@@ -1,5 +1,4 @@
 const { app } = require('@electron/remote')
-
 const Wave = require('./wave')
 
 const timeline = $('.timeline')
@@ -115,7 +114,7 @@ module.exports = class {
       playBtn.className = 'play'
     }
 
-    video.onerror = (e) => {
+    video.onerror = () => {
       if (video.isTranscoded) {
         alert('Unsupported video format')
         loading(false)
@@ -158,10 +157,10 @@ module.exports = class {
   }
 
   showMetadataOnTitle() {
-    let format = video.getMetadata('General.Format') || ''
-    let frameRate = video.getMetadata('General.FrameRate')
-    let bitRate = video.getMetadata('General.OverallBitRate')
-    let samplingRate = video.getMetadata('Audio.SamplingRate')
+    const format = video.getMetadata('General.Format') || ''
+    const frameRate = video.getMetadata('General.FrameRate')
+    const bitRate = video.getMetadata('General.OverallBitRate')
+    const samplingRate = video.getMetadata('Audio.SamplingRate')
 
     const metadata = [ format ]
     if (frameRate) metadata.push(parseFloat(frameRate.toFixed(2)) + 'fps')

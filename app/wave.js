@@ -67,14 +67,14 @@ module.exports = class {
     const o = this.options
     this.canvas.clearRect(0, 0, o.width, o.height)
 
-    let _freqByteData = [].concat(
+    const _freqByteData = [].concat(
       Array.from(freqByteData).reverse().splice(o.accuracy / 2, o.accuracy / 2),
       Array.from(freqByteData).splice(0, o.accuracy / 2)
     )
 
     _freqByteData.forEach((value, index) => {
 
-      let width = (o.width - o.accuracy * o.spacing) / o.accuracy
+      const width = (o.width - o.accuracy * o.spacing) / o.accuracy
       let left = index * (width + o.spacing)
       o.spacing !== 1 && (left += o.spacing / 2)
 
@@ -88,7 +88,8 @@ module.exports = class {
       }
 
       if (o.color instanceof Array) {
-        let pos, linearGradient = this.canvas.createLinearGradient(left, top, left, top + height)
+        const linearGradient = this.canvas.createLinearGradient(left, top, left, top + height)
+        let pos
 
         o.color.forEach((color, index) => {
           if (color instanceof Array) {
