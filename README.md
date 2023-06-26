@@ -9,7 +9,7 @@ Electron，便以此练手，开发了这款与之功能类似的应用。与 Lo
 Flick-Cut 在代码方面几乎完全重写，但依然借鉴了 LosslessCut
 作者的诸多实践，在此表示感谢。
 
-![软件界面](https://raw.githubusercontent.com/metadream/apps-flick-cut/master/screenshot.png)
+![软件界面](https://raw.githubusercontent.com/metadream/app-flick-cut/master/screenshot.png)
 
 ## 主要功能
 
