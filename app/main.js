@@ -18,8 +18,8 @@ function createWindow() {
 
   // Create the browser window.
   mainWindow = new electron.BrowserWindow({
-    width: 780, // Make sure the aspect ratio of video is 16:9
-    height: 600,
+    width: 800, // Make sure the aspect ratio of video is 16:9
+    height: 580,
     icon: appIcon,
     webPreferences: {
       nodeIntegration: true, // Make sure integrate node in renderer.js
