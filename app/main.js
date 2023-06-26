@@ -1,11 +1,3 @@
-/**
- * --------------------------------------------------------
- * Application Main Process
- * Author: Aichen
- * Copyright (c) 2019 Cloudseat.net
- * --------------------------------------------------------
- */
-
 const electron = require('electron')
 const remote = require('@electron/remote/main')
 const path = require('path')

@@ -1,11 +1,3 @@
-/**
- * --------------------------------------------------------
- * Recorder Component
- * Author: Aichen
- * Copyright (c) 2019 Cloudseat.net
- * --------------------------------------------------------
- */
-
 const electron = require('electron')
 const outputPath = require('@electron/remote').getGlobal('desktop')
 const ffmpeg = require('./ffmpeg')

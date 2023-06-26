@@ -1,11 +1,3 @@
-/**
- * --------------------------------------------------------
- * Ffmpeg Process
- * Author: Aichen
- * Copyright (c) 2019 Cloudseat.net
- * --------------------------------------------------------
- */
-
 const { execFile } = require('child_process')
 const stringToStream = require('string-to-stream')
 const path = require('path')

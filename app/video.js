@@ -1,11 +1,3 @@
-/**
- * --------------------------------------------------------
- * Video Enhancements
- * Author: Aichen
- * Copyright (c) 2019 Cloudseat.net
- * --------------------------------------------------------
- */
-
 const http = require('http')
 const ffmpeg = require('./ffmpeg')
 const host = 'http://127.0.0.1:4725'

@@ -1,10 +1,3 @@
-/**
- * --------------------------------------------------------
- * Player Component
- * Author: Aichen
- * Copyright (c) 2019 Cloudseat.net
- * --------------------------------------------------------
- */
 const { app } = require('@electron/remote')
 
 const Wave = require('./wave')

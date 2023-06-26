@@ -1,9 +1,11 @@
 {
-    "name": "lossless-cut",
-    "version": "1.5.1",
-    "description": "Lossless video cutter and merger",
-    "author": "Ai Chen <nobody@cloudseat.net>",
-    "copyright": "Copyright (c) 2019, Cloudseat",
+    "name": "flick-cut",
+    "version": "1.0.0",
+    "description": "Fast and lossless video cutter and merger",
+    "author": "Ai Chen <app@zerg.cc> (https://github.com/metadream)",
+    "homepage": "https://github.com/metadream/app-flick-cut",
+    "repository": "github:metadream/app-flick-cut",
+    "copyright": "Copyright (c) 2019-2023, Metadream",
     "license": "MIT",
     "main": "app/main.js",
     "scripts": {
@@ -12,7 +14,7 @@
         "build:win": "electron-builder -w"
     },
     "build": {
-        "appId": "net.cloudseat.lossless-cut",
+        "appId": "cc.zerg.flick-cut",
         "win": {
             "target": [
                 "nsis"

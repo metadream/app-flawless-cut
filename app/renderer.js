@@ -1,11 +1,3 @@
-/**
- * --------------------------------------------------------
- * Renderer Process
- * Author: Aichen
- * Copyright (c) 2019 Cloudseat.net
- * --------------------------------------------------------
- */
-
 const electron = require('electron')
 const ffmpeg = require('./ffmpeg')
 const videoEnhanced = require('./video')
