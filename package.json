@@ -1,0 +1,35 @@
+{
+    "name": "lossless-cut",
+    "version": "1.5.1",
+    "description": "Lossless video cutter and merger",
+    "author": "Ai Chen <nobody@cloudseat.net>",
+    "copyright": "Copyright (c) 2019, Cloudseat",
+    "license": "MIT",
+    "main": "app/main.js",
+    "scripts": {
+        "start": "electron .",
+        "build:linux": "electron-builder -l",
+        "build:win": "electron-builder -w"
+    },
+    "build": {
+        "appId": "net.cloudseat.lossless-cut",
+        "win": {
+            "target": [
+                "nsis"
+            ]
+        },
+        "linux": {
+            "target": [
+                "deb"
+            ]
+        }
+    },
+    "devDependencies": {
+        "electron": "^23.1.0",
+        "electron-builder": "^23.6.0"
+    },
+    "dependencies": {
+        "string-to-stream": "^3.0.1",
+        "@electron/remote": "^2.0.10"
+    }
+}
