@@ -86,7 +86,7 @@ cutBtn.onclick = function() {
 }
 
 helpBtn.onclick = function() {
-  electron.shell.openExternal('https://github.com/metadream/app-flick-cut')
+  electron.shell.openExternal('https://github.com/metadream/app-flawless-cut')
 }
 
 /* --------------------------------------------------------

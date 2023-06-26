@@ -1,22 +1,22 @@
-# Flick-Cut
+# Flawless-Cut
 
-开发 Flick-Cut 的起因是想改善另一个无损分割工具
+开发 Flawless-Cut 的起因是想改善另一个无损分割工具
 [LosslessCut](https://github.com/mifi/lossless-cut) 的用户界面，该项目的 Issue
 中也曾提到新 UI 的计划，但始终未见升级，适逢近日正学习 Electron，便以此练手。与
-LosslessCut 相比，Flick-Cut
+LosslessCut 相比，Flawless-Cut
 除了界面优化外，也去除了一些不常用的功能以及允许用户选择的设置，以保持简洁易用。尽管
-Flick-Cut 在代码方面几乎完全重写，但依然借鉴了 LosslessCut
+Flawless-Cut 在代码方面几乎完全重写，但依然借鉴了 LosslessCut
 作者的诸多实践，在此表示感谢。
 
-Flick-Cut was developed to improve the user interface of another application,
+Flawless-Cut was developed to improve the user interface of another application,
 [Lossless-Cut](https://github.com/mifi/lossless-cut), and a new plan for UI were
 mentioned in the project's issue but never upgraded. Compared to Lossless-Cut,
-Flick-Cut removes some uncommon features and user preferences to keep it simple
-and easy to use. Although Flick-Cut has almost completely rewritten the code, it
-still borrows from many practices of Lossless-Cut author, and I would like to
-thank you.
+Flawless-Cut removes some uncommon features and user preferences to keep it
+simple and easy to use. Although Flawless-Cut has almost completely rewritten
+the code, it still borrows from many practices of Lossless-Cut author, and I
+would like to thank you.
 
-![Software Interface](https://raw.githubusercontent.com/metadream/app-flick-cut/master/screenshot.png)
+![Software Interface](https://raw.githubusercontent.com/metadream/app-flawless-cut/master/screenshot.png)
 
 ## Main Features
 
@@ -48,12 +48,12 @@ thank you.
 
 ## Supported Formats
 
-由于 Flick-Cut 基于 Chromium 核心和 HTML5 视频播放器，因此并非所有 ffmpeg
+由于 Flawless-Cut 基于 Chromium 核心和 HTML5 视频播放器，因此并非所有 ffmpeg
 支持的格式都将直接受支持。为更加快速流畅地使用本软件，通常应导入以下格式/编解码器：MP4，MOV，WebM，MKV，OGG，WAV，MP3，AAC，H264，Theora，VP8，VP9。有关
 Chromium 受支持的格式/编解码器的更多信息，请参见
 https://www.chromium.org/audio-video。
 
-Since Flick-Cut is based on the Chromium core and HTML5 video player, not all
+Since Flawless-Cut is based on the Chromium core and HTML5 video player, not all
 ffmpegs Supported formats are directly supported. In order to use this software
 faster and smoother, the following formats/codecs should generally be imported:
 MP4, MOV, WebM, MKV, OGG, WAV, MP3, AAC, H264, Theora, VP8, VP9. relate For more

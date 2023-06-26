@@ -1,9 +1,9 @@
 {
-    "name": "flick-cut",
+    "name": "flawless-cut",
     "version": "1.0.0",
     "description": "Fast and lossless video cutter and merger",
     "author": "Ai Chen <app@zerg.cc> (https://github.com/metadream)",
-    "repository": "github:metadream/app-flick-cut",
+    "repository": "github:metadream/app-flawless-cut",
     "copyright": "Copyright (c) 2019-2023",
     "license": "MIT",
     "main": "app/main.js",
@@ -13,7 +13,7 @@
         "build:win": "electron-builder -w"
     },
     "build": {
-        "appId": "cc.zerg.flick-cut",
+        "appId": "cc.zerg.flawless-cut",
         "win": {
             "target": [
                 "nsis"
