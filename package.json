@@ -1,6 +1,6 @@
 {
     "name": "flawless-cut",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Fast and lossless video cutter and merger",
     "author": "Ai Chen <app@zerg.cc> (https://github.com/metadream)",
     "repository": "github:metadream/app-flawless-cut",
