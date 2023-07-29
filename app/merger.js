@@ -1,3 +1,5 @@
+const { basename } = require('path')
+
 module.exports = class {
 
   constructor() {
@@ -31,7 +33,7 @@ module.exports = class {
     this.fileList.innerHTML = ''
 
     filePaths.forEach(filePath => {
-      this.fileList.appendChild($('<li>' + path.basename(filePath) + '</li>'))
+      this.fileList.appendChild($('<li>' + basename(filePath) + '</li>'))
     })
   }
 
